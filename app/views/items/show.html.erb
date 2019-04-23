@@ -1,0 +1,10 @@
+<h1><%= @item.title %></h1>
+
+<div class= "row">
+  <div class="col-sm-6 col-md-4 ">
+     <%= render 'image', locals: @item %>
+    <div class="card">
+      <%= render 'item', locals: @item %>
+    </div>
+  </div>
+</div>
