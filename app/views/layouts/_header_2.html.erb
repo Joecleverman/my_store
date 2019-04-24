@@ -2,11 +2,10 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href="/" class="navbar-brand">My Store</a>
+      <a href="/" class="navbar-brand">My Shopp</a>
     </div>
     <div class="collapse navbar-collapse">
-
-    <%= link_to "Categories", categories_path, class:"btn btn-default navbar-btn"%>
+      <%= link_to "Categories", categories_path, class:"btn btn-default navbar-btn"%>
       <% if user_signed_in? %>
         <%= link_to "Cart", cart_path(current_user.cart), class:"btn btn-default navbar-btn" if current_user.cart%>
              <span class="icon is-small">
@@ -22,8 +21,7 @@
       <% else %>
         <%= link_to "Sign In",  new_user_session_path, class:"btn btn-default navbar-btn" %>
       <% end %>
-
     </div>
-    </div>
-  </nav>
-  </nav>
+  </div>
+</nav>
+</nav>
