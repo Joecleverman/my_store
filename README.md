@@ -22,10 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-My Store App
+
+#My Store App
 This e-commerce store enables:
 
-A user to 1) login, 2) view products and add to cart, 3) checkout 4) view orders
+A user to:
+ 1) login, 2) view products and add to cart, 3) checkout 4) view orders
 Getting Started
 
 Prerequisites
@@ -43,5 +45,5 @@ Create and configure the database
 rake db:create db:migrate
 
 
-Authors
+Authors:
 Joe Cleverman
