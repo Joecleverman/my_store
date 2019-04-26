@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
 
-    before_action :set_cart
+    before_action :set_cart, :authenticate_user!
   
     private
   

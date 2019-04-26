@@ -16,6 +16,11 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+# User Authentication with Facebook
+gem 'omniauth-facebook'
+# Development ENV Variables
+gem 'figaro'
+
 gem 'devise'
 
 # Use CoffeeScript for .coffee assets and views

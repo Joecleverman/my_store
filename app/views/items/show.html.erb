@@ -1,11 +1,9 @@
 
-<div class= "row">
-<div class="col-sm-6 col-md-4 ">
-
 <h1><%= @item.title %></h1>
-<h2>$ <%= @item.price %></h2>
+<h2><%= number_to_currency(@item.price) %></h2>
 
-
-
-</div>
-</div>
+<% if current_user %>
+  <%= button_to "Add to Cart", line_items_path(item_id: @item) %>
+<% else %>
+   <strong>Must be logged in to add item to cart.</strong>
+<% end %>
